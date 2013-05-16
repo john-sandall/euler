@@ -7,10 +7,6 @@
 
 
 def sum_multiples(multiplier, n):
-    x = 0
-    for i in range(1, ((n-1) / multiplier) + 1):
-        x = x + multiplier * i
-    return x
+    return sum(range(0, n, multiplier))
 
-total = sum_multiples(3, 1000) + sum_multiples(5, 1000) - sum_multiples(15, 1000)
-print total
+print sum_multiples(3, 1000) + sum_multiples(5, 1000) - sum_multiples(15, 1000)
