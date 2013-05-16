@@ -8,7 +8,5 @@ while t_1 + t_2 < n:
     t_1 = t_2
     t_2 = t
     total += t if (t % 2 == 0) else 0
-        
-print total
-    
 
+print total
